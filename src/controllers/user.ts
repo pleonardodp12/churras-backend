@@ -63,6 +63,9 @@ export default class UserController {
             return response.json({
               success: true,
               token,
+              user: {
+                name: user.name,
+              },
             })
           } else {
             return response.json({
